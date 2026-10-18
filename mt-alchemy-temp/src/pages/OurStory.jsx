@@ -11,7 +11,7 @@ function OurStory() {
           <br />
           focused on the science of
           <br />
-          potential.
+          <span className="story-highlight">potential.</span>
         </h1>
       </section>
 

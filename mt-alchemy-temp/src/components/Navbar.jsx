@@ -2,13 +2,13 @@
 function Navbar() {
   return (
     <header className="navbar">
-      <a href="/" className="navbar-brand">
+      <a href="#home" className="navbar-brand">
         <span className="brand-icon">✦</span>
         <span>MT Alchemy</span>
       </a>
 
       <nav className="nav-links">
-        <a href="/" className="active">Home</a>
+        <a href="#home">Home</a>
         <a href="#our-story">Our Story</a>
         <a href="#store">Store</a>
         <a href="#learning">Learning</a>
