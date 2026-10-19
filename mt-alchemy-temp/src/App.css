@@ -1227,8 +1227,9 @@ button {
 
 
 
-/* Footer */
 
+
+/* Footer */
 .site-footer {
   width: 100%;
   max-width: none;
@@ -1238,8 +1239,8 @@ button {
   background: var(--purple);
   box-sizing: border-box;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  left: auto;
+  transform: none;
 }
 /* Full-width footer on Store page only */
 .store-page > .site-footer {
