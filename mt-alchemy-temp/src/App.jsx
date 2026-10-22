@@ -14,9 +14,18 @@ function getPageFromHash() {
   if (hash === "#store") return "store";
   if (hash === "#careers") return "careers";
   if (hash === "#contact") return "contact";
+  if (hash === "#learning") return "learning";
   return "home";
 }
-
+function ComingSoon() {
+  return (
+    <main style={{ textAlign: "center", padding: "100px 20px" }}>
+      <h1>Learning Portal</h1>
+      <p>This page is coming soon. We're working on it!</p>
+      <a href="#home">Back to Home</a>
+    </main>
+  );
+}
 function App() {
   const [currentPage, setCurrentPage] = useState(getPageFromHash);
 
@@ -33,6 +42,7 @@ function App() {
   return (
     <>
       <Navbar />
+     
       {currentPage === "our-story" ? (
         <OurStory />
       ) : currentPage === "store" ? (
@@ -41,9 +51,12 @@ function App() {
         <Careers />
       ) : currentPage === "contact" ? (
         <Contact />
+      ) : currentPage === "learning" ? (
+        <ComingSoon />
       ) : (
         <Home />
       )}
+
     </>
   );
 }
